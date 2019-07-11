@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:text="Masukan Dua Angka" />
+
+    <EditText
+        android:id="@+id/eInput1"
+        android:layout_width="405dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/textView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eInput2"
+        android:onClick="TampilTambah"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eInput2"
+        android:layout_toLeftOf="@id/btnBagi"
+        android:onClick="TampilKali"
+        android:text="x" />
+
+    <EditText
+        android:id="@+id/eInput2"
+        android:layout_width="402dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/eInput1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eInput2"
+        android:onClick="TampilKurang"
+        android:layout_toRightOf="@id/btnTambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eInput2"
+        android:onClick="TampilBagi"
+        android:layout_alignParentRight="true"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="399dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/btnKali"
+        android:text="Bersihkan"
+        android:onClick="Bersihkan"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClear"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:text="HASIL" />
+
+    <EditText
+        android:id="@+id/eHasil"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0" />
+
+</RelativeLayout>
