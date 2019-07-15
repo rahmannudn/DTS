@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InternalActivity">
+
+    <Button
+        android:id="@+id/btnUbah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTambah"
+        android:onClick="Ubah"
+        android:text="UbahFile" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Tambah"
+        android:text="TambahFile" />
+
+    <Button
+        android:id="@+id/btnBaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUbah"
+        android:onClick="Baca"
+        android:text="BacaFile" />
+
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBaca"
+        android:minHeight="48dip"
+        android:onClick="Hapus"
+        android:text="HapusFile" />
+
+    <TextView
+        android:id="@+id/txtBaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHapus"
+        android:height="210dp"
+        android:gravity="top|left"
+        android:padding="5dp"
+        android:text="Hello World!" />
+</RelativeLayout>
